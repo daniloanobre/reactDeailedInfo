@@ -25,10 +25,6 @@ const renderApp = () => {
   }
 };
 
-// store.subscribe(() => {
-//   console.log(store.getState());
-// });
-
 ReactDOM.render(<LoadingPage />, document.getElementById("app"));
 
 firebase.auth().onAuthStateChanged(user => {
